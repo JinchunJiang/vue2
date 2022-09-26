@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <script src="../../dist/vue.js"></script>
+</head>
+
+<body>
+  <div id="app" @click="onClick">
+    <h1>{{title}}</h1>
+  </div>
+  <script>
+    const app = new Vue({
+      data() {
+        return {
+          title: "Hello World",
+        };
+      },
+      methods: {
+        onClick() {
+          console.log('1111')
+        }
+      }
+    });
+    app.$mount("#app");
+  </script>
+</body>
+
+</html>
